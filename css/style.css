@@ -405,19 +405,26 @@ margin-left: 25px;
     text-align: center;
 }
 
+
 /* Начало слайдера */
 
+
 .gallery-container {
+    width: 100%;
     overflow: hidden;
     padding: 30px;
 }
 
 .slider-container {
+    display: flex;
+    align-items: center;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     margin: 0 60px;
-    height: 350px;
+    height: 500px;
+    display: flex;
+    align-items: center;
 }
 
 .slider {
@@ -425,33 +432,30 @@ margin-left: 25px;
     display: flex;
     transition: transform 0.5s ease-in-out;
     align-items: center;
+    height: 100%;
+    justify-content: center;
 }
 
 .slide {
-    flex: 0 0 25%;
-    margin: 0 1%;
+    flex: 0 0 450px;
+    height: 450px;
+    margin: 0 15px;
     position: relative;
     transition: all 0.3s ease;
     border-radius: 10px;
     overflow: hidden;
-    opacity: 0.7;
-    transform: scale(0.9);
-    filter: blur(1px);
-    aspect-ratio: 1 / 1;
+    /* opacity: 0.7; */ /* если нужно затемнить изображения неактивные */
+    opacity: 1; /* если НЕ нужно затемнить изображения неактивные */
 }
-        
+
 .slide.active {
     opacity: 1;
-    transform: scale(1);
     z-index: 2;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    filter: blur(0);
-    flex: 0 0 30%;
 }
 
 .slide img {
     width: 100%;
-    height: 350px;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -484,13 +488,13 @@ margin-left: 25px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #bdc3c7;
+    background: #b1b7c4;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .dot.active {
-    background: #3498db;
+    background: #223679;
     transform: scale(1.2);
 }
 
@@ -508,11 +512,11 @@ margin-left: 25px;
     }
     
     .slide {
-        flex: 0 0 80%;
+        flex: 0 0 100%;
     }
     
     .slide img {
-        height: 250px;
+        height: 450px;
     }
 
 }
@@ -527,11 +531,11 @@ margin-left: 25px;
     }
     
     .slide {
-        flex: 0 0 90%;
+        flex: 0 0 100%;
     }
     
     .slide img {
-        height: 200px;
+        height: 450px;
     }
     
     .slide-caption {
