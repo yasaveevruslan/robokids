@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+
+header {
+    height: 100px;
+    background-color: #2541a2;
+
+}
+
+.header1 {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 22px;
+    color: white;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.nav2 {
+    width: 194px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 a {
+    font-size: 16px;
+    color: #223679;
+    font-weight: bolder;
+}
+
+/* Начало баннера */
+.banner_txt h1 {
+    width: 600px;
+    font-size: 64px;
+    color: #223679;
+}
+
+.banner_txt p {
+    width: 400px;
+    font-size: 32px;
+}
+
+.banner_txt {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+    /* left: 0; */
+    /* position: absolute; */
+}
+
+.banner {
+    /* height: 683px; */
+    /* width: 100%; */
+    height: 70vh;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    margin-bottom:80px;
+    /* position: relative; */
+}
+
+.banner .container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+.banner_img {
+    width: 100%;
+    max-width: 650px;
+    background-color: #223679;
+}
+
+.banner_img img {
+    height: 70vh;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+}
+/* Конец баннера */
+
+/* Начало о нас */
+main p {
+    width: 645px;
+    font-size: 24px;
+    padding-top: 40px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+/* Конец о нас */
+
+/* Начало этапы */
+.block1 {
+    width: 310px;
+    height: 234px;
+    border-radius: 20px;
+    background-color: #2541a2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.block1 h4 {
+    font-size: 40px;
+}
+
+.block1 p {
+    font-size: 24px;
+}
+
+.step_block {
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step_img img {
+    width: 640px;
+    height: 488px;
+}
+
+.step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    padding-top: 40px;
+}
+
+/* Начало курсов */
+.courses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.cours1 {
+    width: 420px;
+    height: 531px;
+    background-color: #F9F9F9;
+    border-radius: 30px;
+}
+
+.knops1 {
+    width: 100px;
+    height: 32px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.red {
+    background-color: #F87C7B !important;
+}
+
+.blue {
+    background-color: #5EC3E0 !important;
+}
+
+.green {
+    background-color: #ABCF4D;
+}
+
+
+.courses { 
+    margin-top: 40px;
+}
+.knops2 {
+    width: 100px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: white;
+    color: #F87C7B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cours1 img {
+    position: relative;
+
+}
+
+.knops {
+    width: 368px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26px;
+    position: absolute;
+    top: 2000px;
+    z-index: 1;
+}
+
+.cours_txt h4 {
+    width: 369px;
+    font-size: 24px;
+    margin: 0 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.cours_txt p {
+    width: 369px;
+    font-size: 16px;
+    margin: 0 25px;
+    margin-bottom: 20px;
+}
+
+.zap {
+    width: 175px;
+    height: 48px;
+    background-color: #2541A2;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zap a {
+    color: white;
+    font-size: 16px;
+}
+
+.pod {
+width: 175px;
+    height: 48px;
+    background-color: #F0F1F3;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pod a {
+    color: #2541A2;
+    font-size: 16px;
+    
+}
+
+.nav3 {
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+}
+
+/* Начало новостей */
+
+.new {
+    margin-top: 80px;
+    height: 395px;
+    background-color: #2541A2;
+    margin-bottom: 80px;
+}
+
+.new2 {
+    width: 420px;
+    height: 235px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.new_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.new1 {
+    display: flex;
+    padding-top: 25px;
+    padding-left: 25px;
+    justify-content: space-between;
+    justify-content: left;
+    gap: 25px;
+    margin-bottom: 23px;
+}
+
+.logo_new {
+    width: 114px;
+    height: 114px;
+    border-radius: 15px;
+    background-color: #2541A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt_new h4 {
+    font-size: 24px;
+}
+
+.txt_new {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.new3  {
+width: 372px;
+height: 48px;
+border-radius: 9px;
+background-color: #F0F1F3;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 25px;
+}
+
+.new3 a {
+    color: #2541A2;
+    font-size: 16px;
+    font-weight: bolder;
+    
+}
+
+/* Начало преимуществ */
+
+.advant {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.advant1 {
+    width: 420px;
+    height: 275px;
+    border-radius: 20px;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.advant1 P {
+    width: 260px;
+    text-align: center;
+}
+
+/* Начало слайдера */
+
+        .gallery-container {
+            overflow: hidden;
+            padding: 30px;
+        }
+        
+       
+        
+        
+        
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 0 60px;
+            height: 350px;
+        }
+        
+        .slider {
+            margin-top: 40px;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            align-items: center;
+        }
+        
+        .slide {
+            flex: 0 0 25%;
+            margin: 0 1%;
+            position: relative;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            opacity: 0.7;
+            transform: scale(0.9);
+            filter: blur(1px);
+            aspect-ratio: 1 / 1;
+        }
+                
+        .slide.active {
+            opacity: 1;
+            transform: scale(1);
+            z-index: 2;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            filter: blur(0);
+            flex: 0 0 30%;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 15px;
+        }
+        
+        
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            gap: 10px;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #bdc3c7;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .dot.active {
+            background: #3498db;
+            transform: scale(1.2);
+        }
+        
+       
+        
+        @media (max-width: 768px) {
+            .gallery-container {
+                padding: 20px;
+            }
+            
+            .gallery-title {
+                font-size: 26px;
+            }
+            
+            .slider-container {
+                margin: 0 30px;
+            }
+            
+            .slide {
+                flex: 0 0 80%; /* На мобильных показываем больше центрального слайда */
+            }
+            
+            .slide img {
+                height: 250px;
+            }
+
+        }
+        
+        @media (max-width: 480px) {
+            .gallery-title {
+                font-size: 22px;
+            }
+            
+            .slider-container {
+                margin: 0 15px;
+            }
+            
+            .slide {
+                flex: 0 0 90%;
+            }
+            
+            .slide img {
+                height: 200px;
+            }
+            
+            .slide-caption {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+
