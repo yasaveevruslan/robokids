@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Bit';
+    src: url('../fonts/bitcell_memesbruh03.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Rubic';
+    src: url('../fonts/Rubik.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
 * {
     margin: 0;
     padding: 0;
@@ -34,11 +58,21 @@ header {
     align-items: center;
     gap: 22px;
     color: white;
+   
+}
+
+.logo_txt h4 {
+    font-family: 'Bit', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 52px;
+
 }
 
 nav a {
     color: white;
     font-size: 20px;
+    font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
+    
 }
 
 nav {
@@ -62,6 +96,7 @@ nav {
     font-size: 16px;
     color: #223679;
     font-weight: bolder;
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
 }
 
 /* Начало баннера */
@@ -69,11 +104,14 @@ nav {
     width: 600px;
     font-size: 64px;
     color: #223679;
+    font-family: 'Rubic', Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .banner_txt p {
-    width: 400px;
+    width: 440px;
     font-size: 32px;
+    font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
 }
 
 .banner_txt {
@@ -126,10 +164,13 @@ main p {
     width: 645px;
     font-size: 24px;
     padding-top: 40px;
+    font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
 }
 
 h3 {
     font-size: 40px;
+    font-family: 'Rubic', Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 main {
@@ -155,10 +196,13 @@ main {
 
 .block1 h4 {
     font-size: 40px;
+    font-family: 'Rubic', Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 .block1 p {
     font-size: 24px;
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
 }
 
 .step_block {
@@ -258,13 +302,16 @@ main {
     margin: 0 25px;
     margin-top: 25px;
     margin-bottom: 20px;
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
 }
 
 .cours_txt p {
+    height: 76px;
     width: 369px;
     font-size: 16px;
     margin: 0 25px;
     margin-bottom: 20px;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
 }
 
 .zap {
@@ -280,6 +327,7 @@ main {
 .zap a {
     color: white;
     font-size: 16px;
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
 }
 
 .pod {
@@ -295,6 +343,7 @@ width: 175px;
 .pod a {
     color: #2541A2;
     font-size: 16px;
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
     
 }
 
@@ -351,6 +400,11 @@ width: 175px;
 
 .txt_new h4 {
     font-size: 24px;
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
+}
+
+.txt_new p {
+    font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
 }
 
 .txt_new {
@@ -374,6 +428,7 @@ margin-left: 25px;
     color: #2541A2;
     font-size: 16px;
     font-weight: bolder;
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
     
 }
 
@@ -403,28 +458,33 @@ margin-left: 25px;
 .advant1 P {
     width: 260px;
     text-align: center;
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
 }
 
 
 /* Начало слайдера */
 
 
-.gallery-container {
+.gallery_container {
     width: 100%;
-    overflow: hidden;
-    padding: 30px;
+    position: relative;
 }
 
-.slider-container {
+.slider_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider_container {
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    margin: 0 60px;
+    margin: 0 70px;
     height: 500px;
-    display: flex;
-    align-items: center;
 }
 
 .slider {
@@ -433,19 +493,18 @@ margin-left: 25px;
     transition: transform 0.5s ease-in-out;
     align-items: center;
     height: 100%;
-    justify-content: center;
 }
 
 .slide {
-    flex: 0 0 450px;
+    flex: 0 0 630px;
+    /* width: 630px; */
     height: 450px;
-    margin: 0 15px;
+    margin: 0 10px;
     position: relative;
     transition: all 0.3s ease;
     border-radius: 10px;
     overflow: hidden;
-    /* opacity: 0.7; */ /* если нужно затемнить изображения неактивные */
-    opacity: 1; /* если НЕ нужно затемнить изображения неактивные */
+    opacity: 0.7;
 }
 
 .slide.active {
@@ -460,21 +519,35 @@ margin-left: 25px;
     display: block;
 }
 
-.slide-caption {
+.slider_btn {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+    cursor: pointer;
     font-size: 18px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
 }
 
-.slider-controls {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 15px;
+.slider_btn:hover {
+    background: #638094;
+    transform: translateY(-50%) scale(1.05px);
+    box-shadow: 0 4px 8px rgba(50, 50, 93, 0.2), 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.slider_btn.prev {
+    left: 0;
+}
+
+.slider_btn.next {
+    right: 0;
 }
 
 .dots {
@@ -499,48 +572,294 @@ margin-left: 25px;
 }
 
 @media (max-width: 768px) {
-    .gallery-container {
+    .gallery_container {
         padding: 20px;
     }
     
-    .gallery-title {
-        font-size: 26px;
-    }
-    
-    .slider-container {
-        margin: 0 30px;
+    .slider_container {
+        margin: 0 40px;
+        height: 400px;
     }
     
     .slide {
-        flex: 0 0 100%;
+        flex: 0 0 80%;
+        height: 350px;
     }
     
-    .slide img {
-        height: 450px;
+    .slider_btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
-
+    
+    .slider_btn.prev {
+        left: 10px;
+    }
+    
+    .slider_btn.next {
+        right: 10px;
+    }
 }
 
 @media (max-width: 480px) {
-    .gallery-title {
-        font-size: 22px;
-    }
-    
-    .slider-container {
-        margin: 0 15px;
+    .slider_container {
+        margin: 0 30px;
+        height: 350px;
     }
     
     .slide {
-        flex: 0 0 100%;
+        flex: 0 0 85%;
+        height: 300px;
     }
     
-    .slide img {
-        height: 450px;
+    .slider_btn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
     }
     
-    .slide-caption {
-        font-size: 16px;
-        padding: 10px;
+    .slider_btn.prev {
+        left: 5px;
+    }
+    
+    .slider_btn.next {
+        right: 5px;
     }
 }
+
+/* Конец слайдера */
+
+/* Наяало заявки */
+
+
+.off_txt {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    /* left: 0; */
+    /* position: absolute; */
+}
+
+.offer {
+    /* height: 683px; */
+    /* width: 100%; */
+    height: 70vh;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom:80px;
+    margin-top: 80px;
+    /* position: relative; */
+}
+
+.offer .container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+.off_img {
+    width: 100%;
+    max-width: 650px;
+    background-color: #F9F9F9;
+}
+
+.off_img img {
+    height: 70vh;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+}
+
+.off_txt h4 {
+    font-size: 44px;
+    font-family: 'Rubic', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.off_txt p{ 
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+}
+form input {
+    width: 579px;
+    height: 48px;
+    border: none;
+    border-radius: 9px;
+    color: #969696;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+}
+
+form p {
+    font-size: 16px;
+    line-height: 10px;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+}
+
+form {
+    padding-top: 20px;
+}
+
+.off_zap {
+    width: 579px;
+    height: 48px;
+    background-color: #2541A2;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.off_zap a{
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
+}
+
+u {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Начало вопросы */
+
+.wopr h3 {
+    margin-bottom: 40px;
+}
+
+.wimg{
+    width: 20px;
+    height: 20px;
+    background-color: #223679;
+    border-radius: 5px;
+}
+
+.wtxt {
+    font-size: 32px;
+}
+
+.wtxt p {
+    font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
+}
+
+.w1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.w21 img {
+    cursor: pointer;
+}
+
+
+.w2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+/* Конец вопросы */
+
+/* Начало футера */
+footer {
+    margin-top: 80px;
+    height: 630px;
+    background-color: #2541A2;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.flogo {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+.flogo p { 
+    width: 280px;
+    color: white;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.fnav {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+}
+
+.fnav a {
+    color: white;
+    font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.fnav p {
+font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    width: 300px;
+    
+}
+
+.cont p {
+    font-family: 'Montserrat-Medium', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#con {
+    font-family: 'Montserrat-SemiBold', Arial, Helvetica, sans-serif;
+
+}
+
+.mass {
+    display: flex;
+    gap: 23px;
+}
+
+.flogo img {
+    width: 277px;
+    height: 56px;
+}
+
+.mass img {
+    width: 30px;
+    height: 30px;
+    
+}
+/* Конец футера */
+
+
+
 

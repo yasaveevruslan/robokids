@@ -15,7 +15,7 @@
         <div class="header1 container">
             <div class="logo">
                 <img src="image/logo.png" alt="">
-                <div class="logo_txt">РобоКидс</div>
+                <div class="logo_txt"><h4>РобоКидс</h4></div>
             </div>
             <nav>
                 <a href="#">О нас</a>
@@ -51,7 +51,7 @@
             <p>Мы – центр робототехники для детей от 6 до 16 лет. Наша команда превращает сложные технологии в
                 увлекательные приключения.
 
-                С помощью современных конструкторов и языков программирования мы развиваем в детях логику, креативность
+                <br> <br>С помощью современных конструкторов и языков программирования мы развиваем в детях логику, креативность
                 и инженерное мышление.</p>
         </div>
         <div class="main_img">
@@ -139,9 +139,8 @@
             <img src="image/3.png" alt="">
 
             <div class="cours_txt">
-                <h4>Модуль 2. Робототехника для школьников. </h4>
-                <p>Во втором модуле по робототехнике глубже изучат написание программ для управления созданными ими
-                    механизмами.</p>
+                <h4>Модуль 3. Робототехника для школьников.  </h4>
+                <p>На третьем модуле по робототехнике ученики изучат простые механизмы, которые есть в каждом устройстве.</p>
             </div>
 
             <div class="nav3">
@@ -161,9 +160,8 @@
             <img src="image/4.png" alt="">
 
             <div class="cours_txt">
-                <h4>Модуль 2. Робототехника для школьников. </h4>
-                <p>Во втором модуле по робототехнике глубже изучат написание программ для управления созданными ими
-                    механизмами.</p>
+                <h4>Модуль 4. Робототехника для школьников.</h4>
+                <p>Во втором модуле по робототехнике глубже изучат написание программ для управления созданными ими механизмами.</p>
             </div>
 
             <div class="nav3">
@@ -183,9 +181,8 @@
             <img src="image/5.png" alt="">
 
             <div class="cours_txt">
-                <h4>Модуль 2. Робототехника для школьников. </h4>
-                <p>Во втором модуле по робототехнике глубже изучат написание программ для управления созданными ими
-                    механизмами.</p>
+                <h4>Модуль 5. Робототехника для школьников. </h4>
+                <p>На третьем модуле по робототехнике ученики изучат простые механизмы, которые есть в каждом устройстве.</p>
             </div>
 
             <div class="nav3">
@@ -205,9 +202,8 @@
             <img src="image/6.png" alt="">
 
             <div class="cours_txt">
-                <h4>Модуль 2. Робототехника для школьников. </h4>
-                <p>Во втором модуле по робототехнике глубже изучат написание программ для управления созданными ими
-                    механизмами.</p>
+                <h4>Модуль 6. Робототехника для школьников. </h4>
+                <p>Первый модуль по робототехнике познакомит ребят с основами лего конструирования на Lego WeDo 2.0</p>
             </div>
 
             <div class="nav3">
@@ -305,39 +301,48 @@
 
     <!-- Начало слайдера -->
 
-    <div class="gallery-container">
+    <div class="gallery_container">
         <h3 class="container">Наша фотогалерея</h3>
-        
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide" data-index="2">
-                    <img src="image/img3.jpg">
-                </div>
-                <div class="slide" data-index="3">
-                    <img src="image/img4.jpg">
-                </div>
-                <div class="slide" data-index="0">
-                    <img src="image/img1.jpg">
-                </div>
-                <div class="slide" data-index="1">
-                    <img src="image/img2.jpg">
-                </div>
-                <div class="slide" data-index="2">
-                    <img src="image/img3.jpg">
-                </div>
-                <div class="slide" data-index="3">
-                    <img src="image/img4.jpg">
-                </div>
-                <div class="slide" data-index="0">
-                    <img src="image/img1.jpg">
-                </div>
-                <div class="slide" data-index="1">
-                    <img src="image/img2.jpg">
+        <div class="slider_wrapper">
+            <div class="slider_container">
+                <div class="slider">
+                    <div class="slide" data-index="2">
+                        <img src="image/img3.jpg">
+                    </div>
+                    <div class="slide" data-index="3">
+                        <img src="image/img4.jpg">
+                    </div>
+                    <div class="slide" data-index="0">
+                        <img src="image/img1.jpg">
+                    </div>
+                    <div class="slide" data-index="1">
+                        <img src="image/img2.jpg">
+                    </div>
+                    <div class="slide" data-index="2">
+                        <img src="image/img3.jpg">
+                    </div>
+                    <div class="slide" data-index="3">
+                        <img src="image/img4.jpg">
+                    </div>
+                    <div class="slide" data-index="0">
+                        <img src="image/img1.jpg">
+                    </div>
+                    <div class="slide" data-index="1">
+                        <img src="image/img2.jpg">
+                    </div>
                 </div>
             </div>
-        </div>
-       
+            <button class="slider_btn prev">
+                <img src="image/prevButton.png">
+            </button>
+
+            <button class="slider_btn next">
+                <img src="image/nextButton.png">
+            </button>
         
+       
+        </div>
+
         <div class="dots"></div>
         
     </div>
@@ -346,6 +351,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             const slider = document.querySelector('.slider');
             const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.slider_btn.prev');
+            const nextBtn = document.querySelector('.slider_btn.next');
             const dotsContainer = document.querySelector('.dots');
             
             const realSlides = [
@@ -395,10 +402,183 @@
                 });
             }
 
+            function nextSlide() {
+                currentVisualIndex++;
+                
+                if (currentVisualIndex >= slides.length - 2) {
+                    currentVisualIndex = 2;
+                    updateSlider();
+                }
+                updateSlider();
+            }
+            
+            function prevSlide() {
+                currentVisualIndex--;
+                
+                if (currentVisualIndex <= 1) {
+                    currentVisualIndex = slides.length - 3;
+                    updateSlider();
+                }
+                updateSlider();
+            }
+
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+            });
+            
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+            });
+
             updateSlider();
             
         });
     </script>
+<!-- конец слайдера -->
+
+<!-- Начало заявки -->
+ <div class="offer">
+    <div class="off_img">
+        <img src="image/img4.jpg" alt="">
+    </div>
+    <div class="off_txt">
+        <h4>Запишитесь на первое бесплатное занятие </h4>
+         <form>
+        <p>Как вас зовут?</p><br>
+        <input type="text" placeholder="Ваше имя"><br>
+        <p>Номер телефона</p><br>
+        <input type="text" placeholder="+ 7 (937)-500- 99-99"><br></form>
+        <div class="off_zap">
+            <a href="#">Записаться</a>
+        </div>
+        <p>Нажимая «Записаться», я соглашаюсь с условиями <br><u>
+политики конфиденциальности.</u></p>
+    </div>
+ </div>
+ <!-- Конец заявки -->
+
+ <!-- Начало вопросы -->
+  
+  <div class="wopr container">
+    <h3>Часто задаваемые вопросы</h3>
+    <div class="w1">
+        <div class="w2">
+            <div class="wimg">
+
+            </div>
+            <div class="wtxt">
+                <p>Как проходят уроки?</p>
+            </div>
+
+        </div>
+
+        <div class="w21">
+            <img src="image/str.png" alt="">
+        </div>
+    </div>
+    <div class="w1">
+        <div class="w2">
+            <div class="wimg">
+
+            </div>
+            <div class="wtxt">
+                <p>Что потребуется для занятий?</p>
+            </div>
+
+        </div>
+
+        <div class="w21">
+            <img src="image/str.png" alt="">
+        </div>
+    </div>
+    <div class="w1">
+        <div class="w2">
+            <div class="wimg">
+
+            </div>
+            <div class="wtxt">
+                <p>Как я смогу следить за успехами ребенка?</p>
+            </div>
+
+        </div>
+
+        <div class="w21">
+            <img src="image/str.png" alt="">
+        </div>
+    </div>
+    <div class="w1">
+        <div class="w2">
+            <div class="wimg">
+
+            </div>
+            <div class="wtxt">
+                <p>Кто преподает в IT школе для детей?</p>
+            </div>
+
+        </div>
+
+        <div class="w21">
+            <img src="image/str.png" alt="">
+        </div>
+    </div>
+    <div class="w1">
+        <div class="w2">
+            <div class="wimg">
+
+            </div>
+            <div class="wtxt">
+                <p>Не слишком ли много компьютера в жизни детей?</p>
+            </div>
+
+        </div>
+
+        <div class="w21">
+            <img src="image/str.png" alt="">
+        </div>
+    </div>
+    
+
+
+  </div>
+  <!-- Конец вопросы -->
+
+  <!-- Начало футера -->
+<footer>
+    <div class="foot container">
+        <div class="flogo">
+            <img src="image/logo2.png" alt="">
+            <p>© Мингараева Аделя Наилевна. Все права защищены, 2025</p>
+        </div>
+        <div class="fnav">
+            <p>Навигация</p>
+            <a href="#">О нас</a>
+            <a href="#">Направления</a>
+            <a href="#">Этапы обучения</a>
+            <a href="#">Преимущества</a>
+            <a href="#">Наша фотогалерея</a>
+            <a href="#">Форма</a>
+        </div>
+
+        <div class="cont">
+            <p id="con">Контакты</p>
+            <p>улица Бари Галеева, 3А, Казань</p>
+            <p>+7 (987) 296-62-50</p>
+        </div>
+
+        <div class="mass">
+            <img src="image/wk.png" alt="">
+            <img src="image/tg.png" alt="">
+            <img src="image/ma.png" alt="">
+        </div>
+
+
+
+
+    </div>
+
+</footer>
+
+   <!-- Конец футера -->
 
 </body>
 
